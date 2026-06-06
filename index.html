@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ExploreWorld Travel</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar">
+  <h1 class="logo">ExploreWorld</h1>
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav id="navLinks" class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+  <!-- HERO -->
+  <section id="home" class="hero">
+
+  <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80');"></div>
+
+  <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');"></div>
+
+  <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=80');"></div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h2>Discover Amazing Places</h2>
+    <p>Plan your next adventure with confidence</p>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search destinations...">
+      <button onclick="searchDestinations()">Search</button>
+    </div>
+
+    <div id="searchResults" class="search-results"></div>
+  </div>
+
+</section>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations" class="destinations">
+
+  <div class="section-header">
+    <h2>Popular Destinations</h2>
+    <p>Explore the most visited travel locations around the world</p>
+  </div>
+
+  <div class="destination-grid" id="destinationGrid">
+
+    <div class="destination-card">
+      <img src="./image/image6.jfif" alt="Paris">
+      <div class="card-content">
+        <h3>Paris</h3>
+        <p>City of love and lights</p>
+      </div>
+    </div>
+
+    <div class="destination-card">
+      <img src="./image/image 9.jfif" alt="Dubai">
+      <div class="card-content">
+        <h3>Dubai</h3>
+        <p>Luxury and modern architecture</p>
+      </div>
+    </div>
+
+    <div class="destination-card">
+      <img src="./image/image 2.jfif" alt="Maldives">
+      <div class="card-content">
+        <h3>Maldives</h3>
+        <p>Crystal clear beaches</p>
+      </div>
+    </div>
+
+    <div class="destination-card">
+      <img src="./image/image8.jfif" alt="London">
+      <div class="card-content">
+        <h3>London</h3>
+        <p>Historic and vibrant city</p>
+      </div>
+    </div>
+<div class="destination-card">
+  <img src="./image/image3.jfif" alt="Tokyo">
+  <div class="card-content">
+    <h3>Tokyo</h3>
+    <p>Futuristic city with deep culture</p>
+  </div>
+</div>
+
+<div class="destination-card">
+  <img src="./image/image8.jfif" alt="New York">
+  <div class="card-content">
+    <h3>New York</h3>
+    <p>The city that never sleeps</p>
+  </div>
+</div>
+
+<div class="destination-card">
+  <img src="./image/image5.jfif" alt="Cape Town">
+  <div class="card-content">
+    <h3>Cape Town</h3>
+    <p>Mountains meet the ocean</p>
+  </div>
+</div>
+
+<div class="destination-card">
+  <img src="./image/image7.jfif" alt="Sydney">
+  <div class="card-content">
+    <h3>Sydney</h3>
+    <p>Harbor city with iconic views</p>
+  </div>
+</div>
+
+  </div>
+</section>
+  <!-- ABOUT -->
+ <section id="about" class="about-section">
+
+  <div class="about-container">
+
+    <div class="about-text">
+      <h2>About ExploreWorld</h2>
+
+      <p>
+        ExploreWorld is a modern travel platform designed to help you discover,
+        plan, and experience unforgettable journeys across the globe.
+        We connect travelers with curated destinations, smart planning tools,
+        and inspiring travel ideas.
+      </p>
+
+      <p>
+        Whether you're seeking adventure, relaxation, or cultural exploration,
+        we simplify your travel experience from inspiration to booking.
+      </p>
+
+      <div class="about-stats">
+
+        <div class="stat">
+          <h3>50+</h3>
+          <p>Countries</p>
+        </div>
+
+        <div class="stat">
+          <h3>10k+</h3>
+          <p>Happy Travelers</p>
+        </div>
+
+        <div class="stat">
+          <h3>500+</h3>
+          <p>Destinations</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1000&q=80" alt="Travel team">
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- CONTACT -->
+ <section id="contact" class="contact-section">
+
+  <h2>Contact Us</h2>
+  <p>Send us a message and we’ll respond as soon as possible</p>
+
+  <form id="contactForm">
+
+    <div class="input-group">
+      <input type="text" id="name" placeholder="Your Name">
+      <small class="error" id="nameError"></small>
+    </div>
+
+    <div class="input-group">
+      <input type="email" id="email" placeholder="Email">
+      <small class="error" id="emailError"></small>
+    </div>
+
+    <div class="input-group">
+      <textarea id="message" placeholder="Message"></textarea>
+      <small class="error" id="messageError"></small>
+    </div>
+
+    <button type="submit" id="submitBtn">Send Message</button>
+
+    <p class="success" id="successMessage"></p>
+
+  </form>
+
+</section>
+ <footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <h2>ExploreWorld</h2>
+      <p>Discover the world with confidence. Your journey starts here.</p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://youtube.com" target="_blank">YouTube</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 ExploreWorld. All rights reserved.</p>
+  </div>
+
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
